@@ -1,0 +1,118 @@
+*{
+    background-color: white;
+    box-sizing: border-box;
+    color:blue;
+}
+body{
+    margin: 0 auto;
+}
+.mainapp{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.mainbar{
+    flex-grow: 9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid blueviolet;
+}
+.headersection{
+    background-color: darkolivegreen;
+    height: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: fixed;
+    width :100%;
+}
+.mainsection{
+    flex-grow: 1;
+    padding-left: 1rem;
+    margin-top: 5rem;
+}
+.footersection{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.listItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    border: 2px solid whitesmoke;
+    border-radius: 10%;
+    min-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.listItem > p {
+    border-radius: 50%;
+}
+
+.listitem_img{
+    width:300px;
+    height: 180px;
+}
+
+.listItem:hover{
+    transform: scaleX(1.1);
+    transition: 0.5s;
+}
+
+.btn {
+    border-radius: 40%;
+}
+
+.pdscreen{
+    display: flex;
+    justify-content: space-around;
+}
+.pdscreen1{
+    border-left: 2px solid burlywood;
+    border-right: 2px solid burlywood;
+    padding: 2rem;
+}
+.pdscreen2{
+    border: 2px solid blueviolet;
+    border-radius: 10%;
+    height: 10rem;
+    width: 15rem;
+    text-align: center;
+}
+.btn_cart{
+    border: 0px;
+    width: 14rem;
+    margin-top: 10px;
+}
+#root > div > div.mainbar > div.headersection{
+    color: white;
+}
+.fix{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: brown;
+    top: 50vh;
+}
+.fix:hover{
+    transform: translateX(-100px);
+    transition: 5s;    
+}
